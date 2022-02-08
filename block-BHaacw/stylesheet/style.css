@@ -1,0 +1,192 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #afa8a8;
+  line-height: 1.5;
+  padding-bottom: 4rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+.container {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.header-ul {
+  background-color: white;
+  border-top: 5px solid #0095BE;
+  border-radius: 5px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  justify-items: center;
+}
+
+.header-ul a {
+  text-decoration: none;
+  display: inline-block;
+  color: #0095BE;
+  font-size: 1.6rem;
+  padding: 6px 0;
+}
+
+.main-section {
+  margin-top: 1.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[3];
+      grid-template-columns: repeat(3, minmax(300px, 1fr));
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.item {
+  background-color: white;
+  border-top: 5px solid #0095BE;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.item h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #3A4A4F;
+}
+
+.item p {
+  color: #3A4A4F;
+  font-size: 1.1rem;
+  padding: 7px 0;
+}
+
+.item2 {
+  grid-row: span 3;
+  display: -ms-grid;
+  display: grid;
+}
+
+.item2 img {
+  width: 15rem;
+  height: 15rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.item4 {
+  grid-row: span 2;
+  display: -ms-grid;
+  display: grid;
+}
+
+.item4 img {
+  width: 12rem;
+  height: 12rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+  .main-section {
+    margin-top: 1.5rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(300px, 1fr))[2];
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+  .item2 {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 12px;
+  }
+  .main-section {
+    margin-top: 1.5rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(300px, 1fr))[1];
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
