@@ -1,0 +1,120 @@
+@import "reset";
+
+html{
+    font-size: 16px;
+}
+
+body{
+    background-color: rgb(175, 168, 168);
+    line-height: 1.5;
+    padding-bottom: 4rem;
+}
+
+header{
+    h1{
+        font-size: 3rem;
+        text-align: center;
+        color: #fff;
+        padding: 2rem 0;
+    }
+}
+
+.container{
+    max-width: 1360px;
+    
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.header-ul{
+    background-color: white;
+    border-top: 5px solid #0095BE;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    a {
+        text-decoration: none;
+        display: inline-block;
+       color: #0095BE;
+       font-size: 1.6rem;
+       padding: 6px 0; 
+    }
+}
+
+.main-section{
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3,minmax(300px,1fr));
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.item {
+    background-color: white;
+    border-top: 5px solid #0095BE;
+    border-radius: 5px;
+    padding: 1rem;
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #3A4A4F;
+    }
+    p {
+        color: #3A4A4F;
+        font-size: 1.1rem;
+        padding: 7px 0;
+    }
+}
+
+.item2{
+    grid-row: span 3;
+    
+    display: grid;
+    img {
+        width: 15rem;
+        height: 15rem;
+        object-fit: cover;
+        border-radius: 50%;
+        justify-self: center;
+    }
+   
+}
+.item4{
+    grid-row: span 2;
+    display: grid;
+    img{
+        width: 12rem;
+        height: 12rem;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width:768px) {
+    html{
+        font-size: 12px;
+    }
+   .main-section{
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2,minmax(300px,1fr));
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+} 
+.item2{
+    order: 6;
+}
+}
+
+@media screen and (max-width:450px) {
+    html{
+        font-size: 12px;
+    }
+   .main-section{
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(1,minmax(300px,1fr));
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+} 
+}
